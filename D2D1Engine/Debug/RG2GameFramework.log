@@ -1,0 +1,5 @@
+﻿  Scene1.cpp
+e:\blooming_day1 (1)\d2d1engine\scene1.cpp(159): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+e:\blooming_day1 (1)\d2d1engine\scene1.cpp(274): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  RG2GameFramework.vcxproj -> E:\Blooming_Day1 (1)\Debug\RG2GameFramework.exe
+  RG2GameFramework.vcxproj -> E:\Blooming_Day1 (1)\Debug\RG2GameFramework.pdb (Partial PDB)

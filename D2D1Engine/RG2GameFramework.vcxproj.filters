@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Math.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomGenerator.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Engine\System\System\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Engine\System\System\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteRenderer.cpp">
+      <Filter>Engine\Component\Renderer\SpriteRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRenderer.cpp">
+      <Filter>Engine\Component\Renderer\TextRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationRenderer.cpp">
+      <Filter>Engine\Component\Renderer\AnimationRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="AABBCollider.cpp">
+      <Filter>Engine\Component\Collider\AABB</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Engine\System\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Engine\System\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Engine\System\System\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Engine\System\System\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Engine\System\System\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Engine\System\App</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Engine\Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Engine\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Engine\_ProgramEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Engine\_PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Engine\System\System\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyListener.cpp">
+      <Filter>Engine\Component\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseListener.cpp">
+      <Filter>Engine\Component\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Engine\Component\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectInfo.cpp">
+      <Filter>Engine\Component\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleCollider.cpp">
+      <Filter>Engine\Component\Collider\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Engine\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidBody.cpp">
+      <Filter>Engine\Component\RigidBody</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Engine\System\System\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Game\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="testEntity.cpp">
+      <Filter>Game\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene1.cpp">
+      <Filter>Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.cpp">
+      <Filter>Game\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Math.h">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomGenerator.h">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.inl">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Engine\System\System\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Engine\System\System\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Engine\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteRenderer.h">
+      <Filter>Engine\Component\Renderer\SpriteRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRenderer.h">
+      <Filter>Engine\Component\Renderer\TextRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationRenderer.h">
+      <Filter>Engine\Component\Renderer\AnimationRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="AABBCollider.h">
+      <Filter>Engine\Component\Collider\AABB</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Engine\System\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Engine\System\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Engine\System\System\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Engine\System\System\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Engine\System\System\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>Engine\System\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Engine\Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Engine\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Engine\_PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Engine\System\System\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyListener.h">
+      <Filter>Engine\Component\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseListener.h">
+      <Filter>Engine\Component\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyCode.h">
+      <Filter>Engine\System\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Engine\Component\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Engine\Component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectInfo.h">
+      <Filter>Engine\Component\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Game\Icon</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleCollider.h">
+      <Filter>Engine\Component\Collider\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBody.h">
+      <Filter>Engine\Component\RigidBody</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Engine\System\System\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="testEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene1.h">
+      <Filter>Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <Filter>Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectType.h">
+      <Filter>Engine\Component\Effect</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{f06d8fc4-c627-4e8f-aae3-0d925ee49c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Math">
+      <UniqueIdentifier>{4420cf82-13ee-4806-8e22-3f8ba8cfb47f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component">
+      <UniqueIdentifier>{38ad276a-f263-4ff1-ad32-a188bcc69fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Renderer">
+      <UniqueIdentifier>{5d179ce9-38e8-420d-8472-75ba496b52f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Renderer\SpriteRenderer">
+      <UniqueIdentifier>{4e16443e-b84f-44d1-8cf6-8283e7a2edab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Renderer\TextRenderer">
+      <UniqueIdentifier>{70b2e495-433e-42ab-99b6-487116853dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Renderer\AnimationRenderer">
+      <UniqueIdentifier>{d58bd903-fab1-44ca-9ae1-d1d3c9388419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Collider">
+      <UniqueIdentifier>{8ac42191-9a18-4833-8820-8249dbd85693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Collider\AABB">
+      <UniqueIdentifier>{2e57633c-ed04-4c66-b9f9-490826976945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Listener">
+      <UniqueIdentifier>{ec6a92ed-0f0a-4981-ae42-9842ce81366e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene">
+      <UniqueIdentifier>{c95e6dfc-e6d0-4edb-849e-f84826a05942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System">
+      <UniqueIdentifier>{0f94f067-c7da-4c57-bee8-4be7e7660a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System">
+      <UniqueIdentifier>{2d8f1963-8e1f-4b64-9a10-2efa7bbf6862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System\Asset">
+      <UniqueIdentifier>{66f2c18b-89d7-4026-9465-c88258ae783b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System\Graphics">
+      <UniqueIdentifier>{20809bab-38f4-4c8e-8bf0-246a550d8fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System\Input">
+      <UniqueIdentifier>{65edea9f-66e4-4dc0-a485-d466575cd45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System\SceneManager">
+      <UniqueIdentifier>{1fe4cbe1-b91e-49fc-9607-c0907a313896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System\Settings">
+      <UniqueIdentifier>{554c31a4-4103-4247-b9bb-d50ffe06a99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System\Window">
+      <UniqueIdentifier>{35ca1078-0e59-46e6-8e22-9e47d0bbb087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\App">
+      <UniqueIdentifier>{4f16e77a-4370-4a18-b69d-df67cb2c166d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Entity">
+      <UniqueIdentifier>{4da6e712-6a28-48ee-9818-efe42b79392a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Singleton">
+      <UniqueIdentifier>{9193aef1-d198-440c-a549-83c82ca2bd6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\_ProgramEntry">
+      <UniqueIdentifier>{f01420fe-c19c-4fc2-a722-54f65506ea0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\_PCH">
+      <UniqueIdentifier>{d3510cef-8bc8-4e05-af45-ab10db87001c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\System\Timer">
+      <UniqueIdentifier>{975d2cd6-c01e-4b97-9e44-422bd4ffead5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\_Prefabricated">
+      <UniqueIdentifier>{e80b6378-847d-4af6-8a92-b00194272e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Effect">
+      <UniqueIdentifier>{9b5d6795-e845-4978-b3af-c0af84776949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\_Prefabricated\Unused">
+      <UniqueIdentifier>{c8ac19bc-b2e4-4eed-87a3-745ab8847d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\Collider\Circle">
+      <UniqueIdentifier>{d3c67614-941e-4c57-ae33-0256494d6cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component\RigidBody">
+      <UniqueIdentifier>{126aefe8-4273-4569-aeda-373714969646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene\Camera">
+      <UniqueIdentifier>{00f7875c-95c6-4a6b-9d4b-89f511c2a788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{010b3607-8af2-401e-b103-e2960ee3fcc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entity">
+      <UniqueIdentifier>{b0f39c7d-3732-4154-9dfe-63e37bd4d14b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene">
+      <UniqueIdentifier>{a550aeef-4d27-409b-8418-949c65987354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene\Scene">
+      <UniqueIdentifier>{4e13ba42-0322-49fb-9dd1-b88cd920a162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Icon">
+      <UniqueIdentifier>{83ff5122-4baf-4dde-a8a2-ca18b36efcab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System\UI">
+      <UniqueIdentifier>{cfb547cc-6822-4673-aff6-06cb2ac98609}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Game\Icon</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="logoex.ico">
+      <Filter>Game\Icon</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
