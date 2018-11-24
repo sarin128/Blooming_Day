@@ -193,15 +193,20 @@ void Entity::GetL(std::function<void()> callback) {
 
 void Entity::SetHp(Tag tag) {
 	switch(tag) {
+	case None: this->hp = 0; break;
 	case TagTemple:
-	case TagTower:hp = 3000; break;
-	case TagNexus:hp = 7500; break;
-	case TagWarrior:hp = 350; break;
-	case TagGuardian:hp = 1000; break;
-	case TagArcher: hp = 200; break;
+	case TagTower:this->hp = 3000; break;
+	case TagNexus:this->hp = 7500; break;
+	case TagWarrior:this->hp = 350; break;
+	case TagGuardian:this->hp = 1000; break;
+	case TagArcher: this->hp = 200; break;
 	case TagWBarrack:
 	case TagABarrack:
-	case TagGBarrack:hp = 2500; break;
+	case TagGBarrack:this->hp = 2500; break;
 	default:break;
 	}
+}
+
+void Entity::PathFinding(Vec2F TargetPos) {
+	Path = TargetPos;
 }

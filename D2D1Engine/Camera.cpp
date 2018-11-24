@@ -94,6 +94,12 @@ Camera& Camera::SetFaithScore(Vec2F& Score) {
 	FaithPos = &Score;
 	return*this;
 }
+
+Camera& Camera::SetHpViewer(Vec2F& TargetHp) {
+	HpViewerPos = &TargetHp;
+	return*this;
+}
+
 void Camera::Update()
 {
 	Rect area = Rect(0, 0, RG2Settings->windowWidth / zoom, RG2Settings->windowHeight / zoom).Offset(offset - offset / zoom);
@@ -103,12 +109,16 @@ void Camera::Update()
 		FaithPos->x = -((pos_.x - RG2Window->GetWin().right) + 100);
 		FaithPos->y = -((pos_.y - RG2Window->GetWin().bottom) + 1250);
 	}
+	if (HpViewerPos != NULL) {
+		HpViewerPos->x = -((pos_.x - RG2Window->GetWin().right) + 1950);
+		HpViewerPos->y = -((pos_.y - RG2Window->GetWin().bottom) + 1250);
+	}
 	if (mapPos != NULL) {
 		mapPos->x = -((pos_.x - RG2Window->GetWin().right)+200);
 		mapPos->y = -((pos_.y - RG2Window->GetWin().bottom)+210);
 	}
 	if (ButtonUI.size() != 0) {
-		for (int i = 0,j=0; i < ButtonUI.size(); i++,j+=150) {
+		for (int i = 0,j=0; i < ButtonUI.size(); i++,j+=270) {
 			ButtonUI.at(i)->x = -((pos_.x - RG2Window->GetWin().right) + (1500-j));
 			ButtonUI.at(i)->y = -((pos_.y - RG2Window->GetWin().bottom) + 1250);
 		}

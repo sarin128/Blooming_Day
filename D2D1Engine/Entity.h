@@ -19,6 +19,11 @@ private:
 	bool isEnabled_;
 	LifeState lifeState_;
 public:
+	enum Price {
+		Barrack = 1500,
+		Tower = 1000,
+		Temple = 750,
+	};
 	Tag tag;
 	//deprecated
 	std::string name;
@@ -47,7 +52,6 @@ public:
 public:
 	Entity(bool isRegistered = true);
 	virtual ~Entity();
-
 	void SetEnabled(bool flag);
 	bool IsEnabled() const;
 	int BuildingUpgrade = 1;
@@ -114,6 +118,9 @@ public:
 	Entity* SetAutoRender(bool flag) { isAutoRenderEnabled = flag; return this;}
 	Entity* SetAutoUpdate(bool flag) { isAutoUpdateEnabled = flag; return this;}
 	Entity* SetFollowingParent(bool flag) { isFollowingParentEnabled = flag;  return this;}
+	float GetHp() { return this->hp; }
+	void PathFinding(Vec2F TargetPos);
+	Vec2F Path;
 
 	Tag GetTag() const { return tag; }
 	Vec2F GetScale() const { return scale; }

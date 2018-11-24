@@ -7,12 +7,32 @@
 testEntity::testEntity()
 {
 	AttachComponent<SpriteRenderer>()->SetTexture("Graphic/player.png");
-	AttachComponent<AABBCollider>()->SetRect(GetComponent<SpriteRenderer>()->visibleRect)->SetOnCollisionListener([](Entity* other) {});
+	AttachComponent<AABBCollider>()->SetRect(GetComponent<SpriteRenderer>()->visibleRect)->SetOnCollisionListener([=](Entity* other) {
+		Vec2F TargetPos = other->GetComponent<AABBCollider>()->GetRectWithPos().GetCenter();
+		Vec2F UnitPos = GetComponent<AABBCollider>()->GetRectWithPos().GetCenter();
+		if (TargetPos.y > UnitPos.y) {
+			this->pos.y -= 20;
+			return;
+		}
+		else {
+			this->pos.y += 20;
+			return;
+		}
+	});
 	AttachComponent<RigidBody>(false,false);
 
-	this->SetPos(Vec2F(50, 50));
+	this->SetPos(Vec2F(100, 50));
 }
 void testEntity::OnUpdate() {
+	if (Path) {
+		this->pos.x += 10;
+		if (abs(Path.y - this->pos.y) < 10)
+			this->pos.y += 0;
+		else if (Path.y > this->pos.y)
+			this->pos.y += 10;
+		else
+			this->pos.y -= 10;
+	}
 	if (RG2Input->GetKeyState(KeyCode::KEY_ESCAPE) == KeyState::KEYSTATE_ENTER) {
 		DestroyWindow(RG2Window->GetHwnd());
 	}
