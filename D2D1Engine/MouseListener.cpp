@@ -54,7 +54,7 @@ void MouseListener::OnUpdate()
 	if (collider&&collider->GetID() == typeid(AABBCollider))
 	{
 		
-		const Point2F& currentMousePos = RG2Input->GetMousePos();
+		const Point2F& currentMousePos = Point2F(RG2Input->GetMousePos().x, RG2Input->GetMousePos().y);
 		const bool last = ((AABBCollider*)collider)->GetRectWithWorldPos().IsIntersect(lastMousePos_);
 		const bool current = ((AABBCollider*)collider)->GetRectWithWorldPos().IsIntersect(currentMousePos);
 		
@@ -65,8 +65,9 @@ void MouseListener::OnUpdate()
 				onClick_();
 		}
 			
-		else if (!last && current)
+		else if (!last && current) {
 			onEnter_();
+		}
 		else if (last && !current)
 			onExit_();
 

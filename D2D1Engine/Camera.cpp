@@ -100,27 +100,36 @@ Camera& Camera::SetHpViewer(Vec2F& TargetHp) {
 	return*this;
 }
 
+Camera& Camera::SetUpgradeViewer(Vec2F& Upgrade) {
+	UpgradeViewerPos = &Upgrade;
+	return* this;
+}
+
 void Camera::Update()
 {
 	Rect area = Rect(0, 0, RG2Settings->windowWidth / zoom, RG2Settings->windowHeight / zoom).Offset(offset - offset / zoom);
 	scene_->scale = Vec2F(zoom, zoom);
 	scene_->scaleCenter = offset;
 	if (FaithPos != NULL) {
-		FaithPos->x = -((pos_.x - RG2Window->GetWin().right) + 100);
-		FaithPos->y = -((pos_.y - RG2Window->GetWin().bottom) + 1250);
+		FaithPos->x = -((pos_.x - RG2Window->GetWin().right) + 600);
+		FaithPos->y = -((pos_.y - RG2Window->GetWin().bottom) + 300);
 	}
 	if (HpViewerPos != NULL) {
-		HpViewerPos->x = -((pos_.x - RG2Window->GetWin().right) + 1950);
-		HpViewerPos->y = -((pos_.y - RG2Window->GetWin().bottom) + 1250);
+		HpViewerPos->x = -((pos_.x - RG2Window->GetWin().right) + 1500);
+		HpViewerPos->y = -((pos_.y - RG2Window->GetWin().bottom) + 300);
 	}
 	if (mapPos != NULL) {
-		mapPos->x = -((pos_.x - RG2Window->GetWin().right)+200);
-		mapPos->y = -((pos_.y - RG2Window->GetWin().bottom)+210);
+		mapPos->x = -((pos_.x - RG2Window->GetWin().right)+400);
+		mapPos->y = -((pos_.y - RG2Window->GetWin().bottom)+420);
+	}
+	if (UpgradeViewerPos != NULL) {
+		UpgradeViewerPos->x = -((pos_.x - RG2Window->GetWin().right) + 1500);
+		UpgradeViewerPos->y = -((pos_.y - RG2Window->GetWin().bottom) + 350);
 	}
 	if (ButtonUI.size() != 0) {
-		for (int i = 0,j=0; i < ButtonUI.size(); i++,j+=270) {
-			ButtonUI.at(i)->x = -((pos_.x - RG2Window->GetWin().right) + (1500-j));
-			ButtonUI.at(i)->y = -((pos_.y - RG2Window->GetWin().bottom) + 1250);
+		for (int i = 0,j=0; i < ButtonUI.size(); i++,j+=135) {
+			ButtonUI.at(i)->x = -((pos_.x - RG2Window->GetWin().right) + (1300-j));
+			ButtonUI.at(i)->y = -((pos_.y - RG2Window->GetWin().bottom) + 300);
 		}
 	}
 	if (target)

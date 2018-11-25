@@ -27,6 +27,7 @@ enum Tag {
 	TagNexus,
 	TagTower,
 	TagTemple,
+	TagBuildingGround,
 	TagWBarrack,
 	TagABarrack,
 	TagGBarrack,
@@ -37,9 +38,14 @@ enum Tag {
 	TagPDown,
 	TagAddWarrior,
 	TagAddArcher,
-	TagAddGurdion,
+	TagAddGuardian,
 	TagAttackTarget,
 	TagChangeBuilding,
+	TagCreateABarrack,
+	TagCreateWBarrack,
+	TagCreateGBarrack,
+	TagCreateTower,
+	TagCreateTemple,
 };
 //엔진에서 사용할 사운드 ID 설정
 enum SoundID {
@@ -95,7 +101,9 @@ enum SoundID {
 #include<mmsystem.h>
 #include<dsound.h>
 #include"App.h"
-
+#include <functional>
+#include <set>
+#include <queue>
 
 
 

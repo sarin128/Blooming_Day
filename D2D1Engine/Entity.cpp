@@ -203,6 +203,7 @@ void Entity::SetHp(Tag tag) {
 	case TagWBarrack:
 	case TagABarrack:
 	case TagGBarrack:this->hp = 2500; break;
+	case TagBuildingGround:this->hp = 0; break;
 	default:break;
 	}
 }

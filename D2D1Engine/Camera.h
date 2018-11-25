@@ -35,8 +35,12 @@ public:
 	Camera& SetUI(Vec2F& UI);
 	Camera& ClearUI();
 	Camera& SetFaithScore(Vec2F& Score);
+	Camera& SetHpViewer(Vec2F& TargetHp);
+	Camera& SetUpgradeViewer(Vec2F& Upgrade);
 	Vec2F* mapPos = NULL;
 	Vec2F* FaithPos = NULL;
+	Vec2F* HpViewerPos = NULL;
+	Vec2F* UpgradeViewerPos = NULL;
 	Camera& Shake(float duration, const Vec2F& scale);
 	Vec2F GetOffset() const { return offset; }
 	Rect GetRange() const { return range; }

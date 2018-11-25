@@ -8,6 +8,11 @@ enum LifeState {
 	Destroyed,
 	Detached
 };
+enum Flag {
+	Ally = 1,
+	Enemy = 2,
+	Neutrality = 3,
+};
 class Entity
 {
 private:
@@ -25,6 +30,7 @@ public:
 		Temple = 750,
 	};
 	Tag tag;
+	Flag flag;
 	//deprecated
 	std::string name;
 
@@ -118,6 +124,8 @@ public:
 	Entity* SetAutoRender(bool flag) { isAutoRenderEnabled = flag; return this;}
 	Entity* SetAutoUpdate(bool flag) { isAutoUpdateEnabled = flag; return this;}
 	Entity* SetFollowingParent(bool flag) { isFollowingParentEnabled = flag;  return this;}
+	Entity* SetFlag(Flag flag) { this->flag = flag; return this; }
+	Flag GetFlag() const { return flag; }
 	float GetHp() { return this->hp; }
 	void PathFinding(Vec2F TargetPos);
 	Vec2F Path;

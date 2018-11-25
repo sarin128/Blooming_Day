@@ -5,7 +5,7 @@
 
 SoundManager::SoundManager()
 {
-	volume = 3;
+	volume = 1;
 	DirectSoundCreate8(NULL, &dsound_, NULL);
 
 

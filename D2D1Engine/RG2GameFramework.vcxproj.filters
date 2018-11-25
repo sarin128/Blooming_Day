@@ -326,9 +326,6 @@
     <Filter Include="Game\Icon">
       <UniqueIdentifier>{83ff5122-4baf-4dde-a8a2-ca18b36efcab}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Engine\System\UI">
-      <UniqueIdentifier>{cfb547cc-6822-4673-aff6-06cb2ac98609}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">
